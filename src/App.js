@@ -1,17 +1,23 @@
-import React from "react";
-import InfoCard from "./InfoCard";
+import React, { useState } from "react";
+import Header from "./components/Header";
+import InfoCard from "./components/InfoCard";
 
 import AllCountriesData from "./data/allCountriesData.json";
-
 import "./App.css";
+import Search from "./components/Search";
+import CountryToDisplay from "./components/CountryToDisplay";
 
 function App() {
+  const [seachValue, setSeachValue] = useState("");
+
   return (
     <div className="App">
-      <header className="App-header">Countries</header>
-      {AllCountriesData.map((country) => (
-        <InfoCard country={country} />
-      ))}
+      <Header />
+      <Search searchValue={seachValue} setSearchValue={setSeachValue} />
+      <CountryToDisplay
+        allCountries={AllCountriesData}
+        searchValue={seachValue}
+      />
     </div>
   );
 }

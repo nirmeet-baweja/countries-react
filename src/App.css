@@ -1,28 +1,56 @@
+@import url("https://fonts.google.com/specimen/Nunito+Sans");
+
 .App {
+  width: 100%;
+  background-color: hsl(0, 0%, 98%);
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
+  font-family: "Nunito Sans", cursive, "sans-serif";
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem 3rem;
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.heading {
+  font-size: 1.2rem;
+}
+
+.countryList {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .infoCard {
-  width: 25%;
+  background-color: hsl(0, 0%, 100%);
+  width: 20%;
+  margin: 3rem 1rem;
+  text-align: left;
 }
 
 .flagImg {
+  width: 100%;
+}
+
+.countryDetails {
   width: 80%;
+  margin: auto;
+}
+
+.countryDetailsList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.countryDetailType {
+  font-weight: bold;
 }
