@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Header from "./components/Header";
-import InfoCard from "./components/InfoCard";
 
 import AllCountriesData from "./data/allCountriesData.json";
 import "./App.css";
+
+import Header from "./components/Header";
 import Search from "./components/Search";
 import CountryToDisplay from "./components/CountryToDisplay";
 
